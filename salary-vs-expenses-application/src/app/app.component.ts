@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'salary-vs-expenses-application';
+  title:string = 'salary-vs-expenses-application';
+
+  salary:number = 0;
+
+  inputValue:number = 0;
+
+  increase(){
+    this.salary += this.inputValue;
+    console.log(this.salary);
+  }
+  decrease(){
+    this.salary -=this.inputValue;
+  }
+
 }
