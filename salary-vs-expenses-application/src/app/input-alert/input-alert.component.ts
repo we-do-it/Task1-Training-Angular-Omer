@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class InputAlertComponent implements OnInit {
 
   constructor() { }
-  @Input() isValid!:boolean 
+  @Input() isValid!: boolean
 
   ngOnInit(): void {
   }

@@ -8,8 +8,9 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class InputAreaComponent implements OnInit {
 
 
-  inputValue:number = 0;
+  inputValue: number = 0;
   isValid: boolean = true;
+
   @Output() increaseEvent = new EventEmitter<number>();
   @Output() decreaseEvent = new EventEmitter<number>();
 
@@ -18,25 +19,25 @@ export class InputAreaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  increase(){
-    if(this.checkInputValidation(this.inputValue)){
+  increase() {
+    if (this.checkInputValidation(this.inputValue)) {
       this.isValid = true;
       this.increaseEvent.emit(this.inputValue);
-    }else{
+    } else {
       this.isValid = false;
     }
- 
+
   }
 
-  decrease(){
-    if(this.checkInputValidation(this.inputValue)){
+  decrease() {
+    if (this.checkInputValidation(this.inputValue)) {
       this.isValid = true;
       this.decreaseEvent.emit(this.inputValue);
-    }else{
+    } else {
       this.isValid = false;
     }
   }
-  checkInputValidation(input: number){
-    return input !==null;
+  checkInputValidation(input: number) {
+    return input !== null;
   }
 }

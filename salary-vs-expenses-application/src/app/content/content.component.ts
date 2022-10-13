@@ -15,12 +15,12 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  increase(income:number){
+  increase(income: number) {
     this.isIncreased = true;
     this.transactionValue = income;
     this.salary += income;
   }
-  decrease(outcome:number){
+  decrease(outcome: number) {
     this.isIncreased = false;
     this.transactionValue = outcome;
     this.salary -= outcome;

@@ -9,8 +9,8 @@ export class AlertComponent implements OnInit {
 
   constructor() { }
   @Input() transactionValue: number | undefined;
-  @Input() isIncreased: boolean| undefined;
-  
+  @Input() isIncreased: boolean | undefined;
+
 
   ngOnInit(): void {
 
